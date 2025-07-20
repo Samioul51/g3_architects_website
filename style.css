@@ -53,6 +53,8 @@
 .img-primary{
     width: 75%;
     height: auto;
+    max-height: 700px;
+    max-width: 1400px;
     display: block;
     justify-self: center;
 }
@@ -102,6 +104,7 @@ nav ul{
     display: flex;
     justify-content: center;
     gap:73px;
+    margin-bottom: 130px;
 }
 
 .left-container{
@@ -134,9 +137,194 @@ nav ul{
     text-align: justify;
 }
 
+
+/* Architect Section */
+
+.architect-section{
+    display: flex;
+    justify-content: center;
+    gap:54px;
+    margin-bottom: 130px;
+}
+
+.left{
+    max-width: 586px;
+    max-height: 982px;
+    box-sizing: border-box;
+    margin-top: 39px;
+}
+
+.left-first{
+    display: flex;
+    gap:21px;
+    margin-bottom: 24px;
+}
+
+.ver-line{
+    width:5px;
+    height: 106px;
+    border:none;
+    background-color: #ff900e;
+}
+
+.arch-heading{
+    font-size: 2.8125rem;
+    font-weight: bold;
+}
+
+.arch-description{
+    margin-bottom: 30px;
+}
+
+.card{
+    max-width:586px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    width: 586px;
+    height: 171px;
+    max-width: 586px;
+    max-height: 171px;
+}
+
+.card-heading{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin:0px 0px 10px 33px;
+    padding-top: 30px;
+}
+
+.card-description{
+    margin-left: 30px;
+}
+
+.right{
+    width:800px;
+    max-width: 800px;
+}
+
+.archi{
+    display: block;
+    justify-self: right;
+}
+
+.experience{
+    width: 342px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#fff;
+    font-size: 1.5625rem;
+    font-weight: 500;
+    background-color: #ff900e;
+    border: none;
+    border-radius: 8px;
+    margin-top: -150px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.experience span{
+    font-size: 2.8125rem;
+    font-weight: bold;
+}
+
+/* Facts Section */
+
+.facts-section{
+    margin-bottom: 180.08px;
+}
+
+.top{
+    margin-left: 240px;
+}
+
+.facts-heading{
+    font-size: 2.8125rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.facts-description{
+    margin-bottom: 100.08px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    gap:124.17px;
+}
+
+.card-2{
+    width: 241.83px;
+    height: 241.83px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    border: 1px solid #ff900e;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.card-2-heading{
+    font-size: 2.8125rem;
+    font-weight: 600;
+}
+
+.card-2-description{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Sponsors Section */
+
+.sponsors-section{
+    margin-bottom: 130px;
+}
+
+.sponsors-logo{
+    display: flex;
+    justify-content: center;
+    gap:155.24px;
+
+}
+
+.sponsors-logo img{
+    filter: grayscale(100%);
+    max-width: 166.67px;
+    max-height: 50px;
+}
+
+/* Footer Section */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 216px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff4e7;
+    width: 75%;
+    height: 100px;
+    border: none;
+    border-radius: 8px;
+}
+
 /* Responsive Media Queries */
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:1440px){
     html{
         font-size: 15px;
     }
@@ -165,9 +353,30 @@ nav ul{
     .right-container{
         align-items: center;
     }
+
+    /* Architect Section */
+    .architect-section{
+        flex-direction: column;
+        align-items: center;
+        gap:50px;
+    }
+
+    .archi{
+        width:708px;
+        height: 982px;
+    }
+
+
+    /* Sponsors Section */
+    
+    .sponsors-logo{
+        flex-direction: column;
+        align-items: center;
+        gap:50px;
+    }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:992px) {
     html{
         font-size: 14px;
     }
@@ -200,4 +409,24 @@ nav ul{
     .right-container{
         align-items: center;
     }
+    
+    /* Architect Section */
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:0px 10px;
+        box-sizing: border-box;
+    }
+
+    .archi{
+        width: 75%;
+        height: auto;
+    }
+
+    .experience{
+        position: static;
+        margin-top:10px
+    }
+
 }
